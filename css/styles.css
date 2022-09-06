@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #eeeeed;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* typography */
+h1 {
+	font-size: 2.625rem;
+	line-height: 4.125rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-align: center;
+	color: #121212;
+	text-transform: uppercase;
+}
+h1 a {
+	text-decoration:  none;
+	color: #121212;
+}
+h2{
+	font-size: 2.0625rem;
+	line-height: 3.3125rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #121212;
+	margin-bottom: 1rem;
+}
+h3{
+	font-size: 1.625rem;
+	line-height: 2.6825;
+	font-weight: 800;
+	letter-spacing: 1px;
+	/*margin-bottom: 1.5rem;*/
+	color: #121212;
+}
+h4 {
+	font-size: 1.25rem;
+	line-height: 2.125rem;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: .25px;
+	/*margin-bottom: .5rem;*/
+}
+h5 {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+}
+h6 {
+	font-size: 0.8125rem;
+	line-height: 1.5rem;
+}
+p, main a {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 1rem;
+	line-height: 1.75rem;
+  transition: color .4s ease;
+}
+.home {
+	display: block;
+	position:  relative;
+	background: url("../images/graystation.png") center bottom;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	height: 100vh;
+}
+/* Header section */
+header {
+	width:  100%;
+	min-height:  15vh;
+	padding: 2rem 0;
+}
+nav {
+	width:  100%;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+nav a {
+	position: relative;
+	color:  #121212;
+	padding: 0 1rem 1rem;
+	text-decoration:  none;
+	text-transform:  lowercase;
+	letter-spacing:  2px;
+	transition: transform .3s ease, color .3s ease;
+}
+nav a.active {
+	color: orange;
+}
+nav a:last-child {
+	padding-bottom: 0;
+}
+@media only screen and (min-width: 540px) {
+  header h1 a { transition: color .3s ease; }
+	header h1 a:hover { color: orange; }
+  nav { flex-direction: row; }
+  nav a { padding: 1rem; }
+  nav a:last-child { padding-bottom: 1rem; }
+  nav a:hover {
+  	color: orange;
+  	transform: translateY(-5px);
+  	transition-duration: .8s;
+  }
+}
