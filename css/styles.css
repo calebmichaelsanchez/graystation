@@ -102,14 +102,6 @@ p, main a {
 	line-height: 1.75rem;
   transition: color .4s ease;
 }
-.home {
-	display: block;
-	position:  relative;
-	background: url("../images/graystation.png") center bottom;
-	background-repeat: no-repeat;
-	background-size: 60%;
-	height: 100vh;
-}
 /* Header section */
 header {
 	width:  100%;
@@ -149,4 +141,26 @@ nav a:last-child {
   	transform: translateY(-5px);
   	transition-duration: .8s;
   }
+}
+
+/*------pages------*/
+.container {
+	display: block;
+	position:  relative;
+	width:  100%;
+	height: 100vh;
+}
+.container:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/graystation.png") center bottom;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+.shows, .media, .about {
+	opacity: 50%;
 }
